@@ -32,6 +32,9 @@ export default {
             // Display seconds remaining
             $('button.main .count').html(t);
 
+            // play click sound at start and last 3 seconds of users selection time
+            if(t === 10 || t < 4) sound.play('click');
+
             // Decrement seconds
             t -= 1;
 
