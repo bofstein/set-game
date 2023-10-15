@@ -47,6 +47,10 @@ export default {
 
                 // Change "Set" button text
                 $('button.main').text('Too late!').attr('disabled', true);
+
+                // Play the "bad" sound when the bot finds a set
+                sound.play('3');
+
             }
         });
 
